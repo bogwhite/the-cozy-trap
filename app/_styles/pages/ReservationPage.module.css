@@ -1,0 +1,198 @@
+/* Reservation Page */
+.reservation_heading {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: var(--font-unbounded);
+  line-height: 1;
+  color: var(--color-grey);
+  margin-bottom: 3.2rem;
+}
+
+.reservation {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6.4rem;
+}
+
+/* - Date Selector */
+.date_selector {
+  height: 42.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.day_picker {
+  font-size: 1.6rem;
+  background: var(--color-primary--2);
+  border-radius: 2.4rem 2.4rem 0 0;
+  padding: 3.2rem;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary--1);
+  border-radius: 0 0 2.4rem 2.4rem;
+  padding: 1.6rem 2.4rem;
+}
+
+.summary_nights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-light);
+  margin-bottom: 0.8rem;
+}
+
+.summary_nights svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.summary_total {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--color-light);
+}
+
+.summary_total span {
+  font-weight: 600;
+}
+
+.summary_price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-light);
+}
+
+/* - Reservation Form */
+.reservation_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.form_label {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.form_select,
+.form_input,
+.form_textarea {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--color-grey);
+  border: 1px solid var(--color-grey);
+  border-radius: 2.4rem;
+  padding: 1.2rem 2rem;
+  margin-top: 0.8rem;
+}
+
+.form_select:focus,
+.form_textarea:focus {
+  outline: none;
+}
+
+.select_dropdown {
+  appearance: none !important;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(/svg/drop_down.svg);
+  background-repeat: no-repeat;
+  background-size: 1.4rem;
+  background-position: right 2rem top 1.6rem;
+}
+
+.form_textarea {
+  min-height: 10rem;
+  border-radius: 1.2rem;
+  resize: none;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.form_textarea::placeholder {
+  font-size: 1.4rem;
+}
+
+.form_textarea::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.action_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.2rem;
+  margin-top: 1.6rem;
+}
+
+.selecting_text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.clear_btn {
+  width: 40%;
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  background: var(--color-primary--2);
+  border-radius: 1.2rem;
+  padding: 1.2rem 0;
+  transition: transform 0.3s;
+}
+
+.clear_btn:active {
+  transform: translateY(0.2rem);
+}
+
+/* -- Submit Button */
+.submit_btn {
+  width: 60%;
+  font-size: 1.8rem;
+  color: var(--color-light);
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 1.2rem;
+  padding: 1.2rem 0;
+  transition: transform 0.3s;
+}
+
+.submit_btn:active {
+  transform: translateY(0.2rem);
+}
+
+/* - Login Message */
+.message p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-grey);
+}
+
+.message_link {
+  display: inline-block;
+  color: var(--color-blue);
+  text-decoration: underline;
+  transition: transform 0.3s;
+}
+
+.message_link:active {
+  transform: translateY(0.2rem);
+}

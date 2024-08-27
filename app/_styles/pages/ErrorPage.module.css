@@ -1,0 +1,33 @@
+.error {
+  height: calc(100vh - var(--header) - var(--footer));
+  text-align: center;
+  padding: 9.6rem 6.4rem;
+}
+
+.error_heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: var(--font-unbounded);
+  line-height: 1;
+  margin-bottom: 3.2rem;
+}
+
+.error_paragraph {
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-bottom: 4.8rem;
+}
+
+.error_btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-light);
+  background: var(--color-primary);
+  border-radius: 1.2rem;
+  padding: 1.6rem 3.2rem;
+  transition: transform 0.3s;
+}
+
+.error_btn:active {
+  transform: translateY(0.2rem);
+}

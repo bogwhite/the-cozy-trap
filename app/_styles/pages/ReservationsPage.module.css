@@ -1,0 +1,179 @@
+/* Reservations Page */
+.reservations {
+  min-width: 100%;
+  margin-top: 4.8rem;
+}
+
+.reservations_heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: var(--font-unbounded);
+  line-height: 1;
+  margin-bottom: 4.8rem;
+}
+
+.reservations_paragraph {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.reservations_link {
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 1;
+  text-decoration: underline;
+  color: var(--color-blue);
+  transition: transform 0.3s;
+}
+
+.reservations_link:active {
+  transform: translateY(0.2rem);
+}
+
+.reservations_list {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+/* - Card */
+.card {
+  display: flex;
+}
+
+.img_box {
+  height: 17.5rem;
+  width: 30.8rem;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.card_img {
+  border-radius: 2.4rem 0 0 2.4rem;
+}
+
+.content_box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  border: 1px solid var(--color-grey--2);
+  border-radius: 0 2.4rem 2.4rem 0;
+  padding: 2.4rem 3.2rem;
+}
+
+.card_name {
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-family: var(--font-unbounded);
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.card_date {
+  font-size: 1.6rem;
+  color: var(--color-grey--2);
+}
+
+.tag_box {
+  justify-self: end;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-light);
+  border-radius: 1.2rem;
+  padding: 1.2rem 2.4rem;
+}
+
+.tag_past {
+  background: var(--color-grey--1);
+}
+
+.tag_upcoming {
+  background: var(--color-green);
+}
+
+.info_box {
+  display: flex;
+  align-items: end;
+  gap: 0.8rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.info_price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.info_bull {
+  font-size: 2.4rem;
+  color: var(--color-grey--2);
+}
+
+.info svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+/* -- Delete Reservation / Feedback */
+.action_box {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  justify-self: end;
+  align-self: end;
+}
+
+.delete_btn,
+.feedback_link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--color-grey);
+  border: 1px solid var(--color-grey);
+  border-radius: 1.2rem;
+  padding: 1.2rem 2.4rem;
+  transition: all 0.3s;
+}
+
+.delete_btn:active,
+.feedback_link:active {
+  transform: translateY(0.2rem);
+}
+
+.delete_btn svg,
+.feedback_link svg {
+  height: 1.6rem;
+  width: 1.6rem;
+  color: var(--color-grey);
+}
+
+.user_rating {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-light);
+  background: var(--color-primary);
+  border-radius: 1.2rem;
+  padding: 0.8rem 1.6rem;
+}
+
+.user_rating svg {
+  height: 2rem;
+  width: 2rem;
+  color: var(--color-gold);
+}

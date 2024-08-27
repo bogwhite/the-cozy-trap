@@ -1,0 +1,39 @@
+/* Login Page */
+.login {
+  height: calc(100vh - var(--header) - var(--footer));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 9.6rem 6.4rem;
+}
+
+.login_heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: var(--font-unbounded);
+  line-height: 1;
+}
+
+/* - Sign-In Button */
+.signIn_btn {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-light);
+  background: var(--color-primary);
+  border-radius: 1.2rem;
+  padding: 1.6rem 3.2rem;
+  transition: transform 0.3s;
+}
+
+.signIn_btn:active {
+  transform: translateY(0.2rem);
+}
+
+.signIn_btn img {
+  height: 2.4rem;
+  width: 2.4rem;
+}

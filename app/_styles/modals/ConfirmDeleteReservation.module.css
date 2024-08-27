@@ -1,0 +1,46 @@
+.confirmation_heading {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: var(--font-unbounded);
+  line-height: 1;
+  color: var(--color-grey);
+  margin-bottom: 3.2rem;
+}
+
+.confirmation_paragraph {
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--color-grey);
+  margin-bottom: 4.8rem;
+}
+
+.btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.confirmation_btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+  padding: 1.6rem 4.8rem;
+  transition: transform 0.3s;
+}
+
+.confirmation_btn:active {
+  transform: translateY(0.2rem);
+}
+
+.cancel {
+  color: var(--color-grey);
+  border: 1px solid var(--color-grey);
+}
+
+.delete {
+  color: var(--color-light);
+  background: var(--color-red);
+}

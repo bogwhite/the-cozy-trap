@@ -1,0 +1,30 @@
+.thank_you {
+  height: calc(100vh - var(--header) - var(--footer));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 9.6rem 6.4rem;
+}
+
+.thank_you_heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: var(--font-unbounded);
+  line-height: 1;
+}
+
+.thank_you_link {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-light);
+  background: var(--color-primary);
+  border-radius: 1.2rem;
+  padding: 1.6rem 3.2rem;
+  transition: transform 0.3s;
+}
+
+.thank_you_link:active {
+  transform: translateY(0.2rem);
+}

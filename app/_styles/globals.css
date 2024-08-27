@@ -1,0 +1,81 @@
+/* Global Variables */
+:root {
+  /* Color */
+  --color-primary: #2c405b;
+  --color-primary--1: #677c99cc;
+  --color-primary--2: #eaf3fd;
+
+  --color-blue: #1971c2;
+  --color-green: #10af5d;
+  --color-red: #f03e3e;
+  --color-gold: #fcc419;
+
+  --color-grey: #222222;
+  --color-grey--1: #949896;
+  --color-grey--2: #b9bbba;
+  --color-grey--3: #d0d0d0;
+
+  --color-light: #ffffff;
+
+  --color-overlay: rgb(34, 34, 34, 0.65);
+
+  /* Size */
+  --header: 9.2rem;
+  --footer: 27.8rem;
+
+  /* Box Shadow */
+  --shadow-modal: 0 1.2rem 2.4rem rgb(255, 255, 255, 0.1);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+/* PRESET */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-manrope), sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-primary);
+}
+
+/* Data Picker */
+.rdp-root {
+  --rdp-day-height: 3.2rem !important;
+  --rdp-day-width: 3.2rem !important;
+  --rdp-weekday-font: 1.6rem !important;
+  --rdp-weekday-opacity: 1 !important;
+  --rdp-weekday-padding: 1.6rem 0.4rem !important;
+  --rdp-selected-font: var(--rdp-font-family) !important ;
+  --rdp-selected-border: 1px solid var(--color-primary) !important;
+  --rdp-accent-color: var(--color-primary) !important;
+  --rdp-range_middle-font: var(--rdp-font-family) !important;
+  --rdp-range_middle-color: var(--color-light--1) !important;
+  --rdp-range_middle-background-color: var(--color-primary--1) !important;
+}
+.rdp-weekday {
+  font-weight: 600 !important;
+}

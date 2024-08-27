@@ -1,0 +1,13 @@
+.layout {
+  max-width: 144rem;
+  margin: 0 auto;
+  min-height: calc(100vh - var(--header));
+  display: grid;
+  grid-template-columns: 30.8rem 1fr;
+  gap: 6.4rem;
+  padding: 6.4rem;
+}
+
+.main {
+  position: relative;
+}
