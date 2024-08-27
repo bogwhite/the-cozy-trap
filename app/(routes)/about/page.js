@@ -88,7 +88,7 @@ async function AboutPage() {
 
         <ul className={styles.card_layout}>
           {feedbacks.map((feedback) => (
-            <Suspense fallback={<Spinner />}>
+            <Suspense fallback={<Spinner />} key={feedback.id}>
               <FeedbackCard feedback={feedback} key={feedback.id} />
             </Suspense>
           ))}
@@ -106,6 +106,7 @@ export default AboutPage;
 // --- /: back to the root route
 // Revalidation: is the process of clearing the Data cache and re-fetching the latest data after a certain amount of time
 // Suspense: display a fallback until its children have finished loading | let you coordinate which parts of your UI should always display, and which parts should progressively reveal more content in a sequence of loading states
+// - key: track of suspended components
 // Image
 // # props
 // - fill: allows your image to be sized by its parent element
