@@ -7,10 +7,7 @@ import ReservationForm from "./ReservationForm";
 import styles from "@/app/_styles/pages/ReservationPage.module.css";
 
 async function Reservation({ cabin }) {
-  // Cabin properties
   const { name } = cabin;
-
-  // Settings / Booked dates | data from the server
   const [settings, bookedDates] = await Promise.all([
     getSettings(),
     getBookedDatesByCabinId(cabin.id),
@@ -32,12 +29,3 @@ async function Reservation({ cabin }) {
 }
 
 export default Reservation;
-
-// Methods
-// - Promise.all(): returns a single Promise from a list of promises, when all promises fulfill
-// Operators
-// - ?: | condition ? expression 1(true) : expression 2(false)
-// Assignment
-// {destructuring} | gives you direct access to the properties
-// HTML
-// - <></>: let you group a list of children elements without adding extra nodes to the DOM

@@ -1,4 +1,4 @@
-"use client"; // Client-side
+"use client";
 
 import { CalendarDaysIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
@@ -28,8 +28,3 @@ function SideNavigation() {
 }
 
 export default SideNavigation;
-
-// App Router
-// - link: sets the URL
-// -- href: the path to link
-// --- /: back to the root route

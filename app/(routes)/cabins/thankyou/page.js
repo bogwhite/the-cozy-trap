@@ -15,8 +15,3 @@ function ThankYouPage() {
 }
 
 export default ThankYouPage;
-
-// App router
-// - link: sets the URL
-// -- href: the path to link
-// --- /: back to the root route

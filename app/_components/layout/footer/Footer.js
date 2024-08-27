@@ -5,10 +5,8 @@ import { usePathname } from "next/navigation";
 import styles from "@/app/_styles/layout/Footer.module.css";
 
 function Footer() {
-  // URL reader | pathname
   const pathname = usePathname();
 
-  // Path exceptions
   const exception = pathname.startsWith("/cabins") || pathname === "/about";
 
   return exception ? (
@@ -48,12 +46,3 @@ function Footer() {
 }
 
 export default Footer;
-
-// App Router
-// # url | pathname
-// - usePathname(): used to read the pathname in the current URL
-// Methods
-// - startsWith(): returns true if a string starts with a specified string
-// Operators
-// - ?: | condition ? expression 1(true) : expression 2(false)
-// - || | OR(choice: the first true)

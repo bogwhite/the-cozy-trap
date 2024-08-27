@@ -13,8 +13,3 @@ function NotFound() {
 }
 
 export default NotFound;
-
-// App router
-// - link: sets the URL
-// -- href: the path to link
-// --- /: back to the root route

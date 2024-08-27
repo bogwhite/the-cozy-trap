@@ -4,15 +4,12 @@ import ReservationCard from "@/app/_features/reservations/ReservationCard";
 import Link from "next/link";
 import styles from "@/app/_styles/pages/ReservationsPage.module.css";
 
-// Metadata
 export const metadata = {
   title: "Reservations",
 };
 
 async function ReservationsPage() {
-  // session | after user authorised / data from the provider
   const session = await auth();
-  // bookings | data from the server
   const bookings = await getBookings(session.user.guestId);
 
   return (
@@ -38,15 +35,3 @@ async function ReservationsPage() {
 }
 
 export default ReservationsPage;
-
-// App router
-// - link: sets the URL
-// -- href: the path to link
-// --- /: back to the root route
-// Props: arguments passed into React components
-// - key{}: each child in a list should have a unique "key" prop
-// Methods
-// - map(): returns a new array containing the results of operations with all array elements
-// -- (value) | the value of the current element
-// Operators
-// - ?: | condition ? expression 1(true) : expression 2(false)

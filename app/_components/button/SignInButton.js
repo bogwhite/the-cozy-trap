@@ -13,7 +13,3 @@ function SignInButton() {
 }
 
 export default SignInButton;
-
-// Props
-// # form
-// - action: specifies where to send the form-data after the submission

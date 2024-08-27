@@ -1,4 +1,4 @@
-"use client"; // Client-side
+"use client";
 
 import styles from "@/app/_styles/pages/ErrorPage.module.css";
 
@@ -16,10 +16,3 @@ function Error({ error, reset }) {
 }
 
 export default Error;
-
-// Props: arguments passed into React components
-// - onClick(): calls a function when a button is clicked
-// # {destructuring} | gives you direct access to the properties
-// ErrorBoundary: a component that catches an error(within a component tree) and prevents it from crashing the application
-// - error: display an error
-// - reset: reset the error and re-try the render

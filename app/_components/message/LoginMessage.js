@@ -16,8 +16,3 @@ function LoginMessage() {
 }
 
 export default LoginMessage;
-
-// App router
-// - link: sets the URL
-// -- href: the path to link
-// --- /: back to the root route

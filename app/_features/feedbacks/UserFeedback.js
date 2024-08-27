@@ -24,12 +24,3 @@ function UserFeedback({ userRating, bookingId }) {
 }
 
 export default UserFeedback;
-
-// App Router
-// - link: sets the URL
-// -- href: the path to link
-// --- /: back to the root route
-// Operators
-// - ?: | condition ? expression 1(true) : expression 2(false)
-// HTML
-// - <></>: let you group a list of children elements without adding extra nodes to the DOM

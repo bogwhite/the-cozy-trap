@@ -1,6 +1,5 @@
 /* Global Variables */
 :root {
-  /* Color */
   --color-primary: #2c405b;
   --color-primary--1: #677c99cc;
   --color-primary--2: #eaf3fd;
@@ -19,15 +18,12 @@
 
   --color-overlay: rgb(34, 34, 34, 0.65);
 
-  /* Size */
   --header: 9.2rem;
   --footer: 27.8rem;
 
-  /* Box Shadow */
   --shadow-modal: 0 1.2rem 2.4rem rgb(255, 255, 255, 0.1);
 }
 
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +46,6 @@ input {
   outline: none;
 }
 
-/* PRESET */
 html {
   font-size: 62.5%;
 }

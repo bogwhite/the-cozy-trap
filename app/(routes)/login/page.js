@@ -1,7 +1,6 @@
 import SignInButton from "@/app/_components/button/SignInButton";
 import styles from "@/app/_styles/pages/LoginPage.module.css";
 
-// Metadata
 export const metadata = {
   title: "Login",
 };

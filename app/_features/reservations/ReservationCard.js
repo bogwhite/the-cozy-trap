@@ -6,7 +6,6 @@ import UserFeedback from "@/app/_features/feedbacks/UserFeedback";
 import styles from "@/app/_styles/pages/ReservationsPage.module.css";
 
 function ReservationCard({ booking }) {
-  // Booking properties
   const {
     id,
     startDate,
@@ -74,15 +73,3 @@ function ReservationCard({ booking }) {
 }
 
 export default ReservationCard;
-
-// Image
-// - local import / {image}: next.js will automatically determine the width and height
-// Date-FNS
-// - format: return the formatted date string in the given format
-// - isPast: check if the given date is in the past
-// Methods
-// # date
-// - new Date(): an object with the current date and time
-// Operators
-// - && | AND(choice: the first false or the last true)
-// - ?: | condition ? expression 1(true) : expression 2(false)

@@ -11,7 +11,3 @@ function Layout({ children }) {
 }
 
 export default Layout;
-
-// Props: arguments passed into React components
-// - children: child components of the element
-// # {destructuring} | gives you direct access to the properties

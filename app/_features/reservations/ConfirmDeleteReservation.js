@@ -2,7 +2,6 @@ import { useClose } from "../../_components/modal/Modal";
 import styles from "@/app/_styles/modals/ConfirmDeleteReservation.module.css";
 
 function ConfirmDeleteReservation({ onConfirm }) {
-  // Close property
   const { close } = useClose();
 
   return (
@@ -31,8 +30,3 @@ function ConfirmDeleteReservation({ onConfirm }) {
 }
 
 export default ConfirmDeleteReservation;
-
-// Props: arguments passed into React components
-// - onClick(): calls a function when a button is clicked
-// Assignment
-// {destructuring} | gives you direct access to the properties

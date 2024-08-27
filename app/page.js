@@ -39,13 +39,3 @@ function AppPage() {
 }
 
 export default AppPage;
-
-// App router
-// - link: sets the URL
-// -- href: the path to link
-// --- /: back to the root route
-// Image
-// - local import / {image}: next.js will automatically determine the width and height
-// # props
-// - fill: allows your image to be sized by its parent element
-// - quality: the quality of the optimized image | 1 / 100

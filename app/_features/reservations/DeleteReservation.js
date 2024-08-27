@@ -1,4 +1,4 @@
-"use client"; // Client-side
+"use client";
 
 import { Modal, Open, Window } from "@/app/_components/modal/Modal";
 import { deleteBooking } from "@/app/_library/actions";
@@ -23,6 +23,3 @@ function DeleteReservation({ bookingId }) {
 }
 
 export default DeleteReservation;
-
-// Props: arguments passed into React components
-// # {destructuring} | gives you direct access to the properties

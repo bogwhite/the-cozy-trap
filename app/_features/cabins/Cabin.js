@@ -13,11 +13,8 @@ import TextExpander from "@/app/_components/text/TextExpander";
 import styles from "@/app/_styles/pages/CabinPage.module.css";
 
 async function Cabin({ cabin }) {
-  // Cabin properties
   const { name, maxCapacity, regularPrice, image, description, location } =
     cabin;
-
-  // User data | after user authorised
   const session = await auth();
 
   return (
@@ -82,12 +79,3 @@ async function Cabin({ cabin }) {
 }
 
 export default Cabin;
-
-// Props: arguments passed into React components
-// # {destructuring} | gives you direct access to the properties
-// Image
-// - local import / {image}: next.js will automatically determine the width and height
-// # props
-// - fill: allows your image to be sized by its parent element
-// Operators
-// - ?. | check existing element / returns undefined if an object is undefined or null (instead of an error)

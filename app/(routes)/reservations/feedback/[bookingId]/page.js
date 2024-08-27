@@ -4,7 +4,6 @@ import SubmitButton from "@/app/_components/button/SubmitButton";
 import styles from "@/app/_styles/pages/FeedbackPage.module.css";
 
 async function feedbackPage({ params }) {
-  // BookingId | data from the dynamic params
   const { bookingId } = params;
 
   return (
@@ -42,13 +41,3 @@ async function feedbackPage({ params }) {
 }
 
 export default feedbackPage;
-
-// App router
-// # url | dynamic params
-// - params: returns an object of the dynamic params from the current URL that were matched the <Route path>
-// Props: arguments passed into React components
-// # form
-// - action: specifies where to send the form-data after the submission
-// - name: specifies the name of a form element | reference form data after the submission
-// - value{}: specifies the value of the form element
-// - type = "hidden" | an invisible input field | let to include data that can't be seen or modified by user when a form is submitted

@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "@/app/_styles/pages/AboutPage.module.css";
 
 function FeedbackCard({ feedback }) {
-  // Feedback properties
   const { cabinName, fullName, cabinImage, avatarImage, review, userRating } =
     feedback;
 

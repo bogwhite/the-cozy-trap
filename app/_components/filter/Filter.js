@@ -1,26 +1,18 @@
-"use client"; // Client-side
+"use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import styles from "@/app/_styles/pages/CabinsPage.module.css";
 
 function Filter() {
-  // URL reader | query string
   const searchParams = useSearchParams();
-  // Router access
   const router = useRouter();
-  // URL reader | pathname
   const pathname = usePathname();
 
-  // Active tab | read value or all
   const activeTab = searchParams.get("capacity") ?? "all";
 
-  // Redirect Router
   function handleFilter(filter) {
-    // read query string
     const params = new URLSearchParams(searchParams);
-    // set value
     params.set("capacity", filter);
-    // navigation
     router.replace(`${pathname}?${params}`);
   }
 
@@ -43,7 +35,6 @@ function Filter() {
 }
 
 function Button({ filter, handleFilter, activeTab, children }) {
-  // Style
   const active_tab = filter === activeTab ? `${styles.active_tab}` : null;
 
   return (
@@ -57,25 +48,3 @@ function Button({ filter, handleFilter, activeTab, children }) {
 }
 
 export default Filter;
-
-// App Router
-// # url api
-// - urlSearchParams: defines methods to work with the query string of URL
-// -- set(): sets the value according to the specified search parameter
-// # url | query string
-// - useSearchParams: used to read the query string in the current URL
-// -- get(): returns the value according to the specified search parameter
-// # url | pathname
-// - usePathname(): used to read the pathname in the current URL
-// # router access
-// - useRouter: allows to get access to the router object
-// -- replace: replaces the current entry in the history stack
-// Props: arguments passed into React components
-// - onClick(): calls a function when a button is clicked
-// - children: child components of the element passed between tags
-// # {destructuring} | gives you direct access to the properties
-// Methods
-// - replace(): returns a new string with the value replaced
-// Operators
-// - ?? | OR(choice: the first true) | 0 and '' = true / null and undefined = false
-// - ?: | condition ? expression 1(true) : expression 2(false)

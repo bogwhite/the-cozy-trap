@@ -6,7 +6,6 @@ import Profile from "./Profile";
 import styles from "@/app/_styles/layout/Header.module.css";
 
 async function Navigation() {
-  // User data | after user authorised
   const session = await auth();
 
   return (
@@ -27,10 +26,3 @@ async function Navigation() {
 }
 
 export default Navigation;
-
-// Props: arguments passed into React components
-// # auth
-// - referrerPolicy: no-referrer | sent requests do not include any referrer information | important to display google profile images
-// Operators
-// - ?. | check existing element / returns undefined if an object is undefined or null (instead of an error)
-// - ?: | condition ? expression 1(true) : expression 2(false)

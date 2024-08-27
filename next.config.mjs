@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // Path for uploading images from the server
     remotePatterns: [
       {
         protocol: "https",

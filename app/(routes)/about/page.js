@@ -8,16 +8,13 @@ import styles from "@/app/_styles/pages/AboutPage.module.css";
 import { Suspense } from "react";
 import Spinner from "@/app/_components/spinner/Spinner";
 
-// Time of re-fetching data | one day
 export const revalidate = 86400;
 
-// Metadata
 export const metadata = {
   title: "About",
 };
 
 async function AboutPage() {
-  // Feedbacks | data from the server
   const feedbacks = await getFeedbacks();
 
   return (
@@ -99,15 +96,3 @@ async function AboutPage() {
 }
 
 export default AboutPage;
-
-// App Router
-// - link: sets the URL
-// -- href: the path to link
-// --- /: back to the root route
-// Revalidation: is the process of clearing the Data cache and re-fetching the latest data after a certain amount of time
-// Suspense: display a fallback until its children have finished loading | let you coordinate which parts of your UI should always display, and which parts should progressively reveal more content in a sequence of loading states
-// - key: track of suspended components
-// Image
-// # props
-// - fill: allows your image to be sized by its parent element
-// - quality: the quality of the optimized image | 1 / 100

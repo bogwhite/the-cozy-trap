@@ -14,7 +14,3 @@ function SignOutButton() {
 }
 
 export default SignOutButton;
-
-// Props
-// # form
-// - action: specifies where to send the form-data when a form is submitted
